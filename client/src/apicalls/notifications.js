@@ -1,9 +1,9 @@
 const { apiRequest } = require(".");
 
-export const AddNotification = async (notification) => apiRequest("post", "/api/notifications/add-notification", notification);
+export const AddNotification = async (notification) => apiRequest("post", "https://project-management-d5e2.onrender.com/api/notifications/add-notification", notification);
 
-export const GetAllNotifications = async () => apiRequest("get", "/api/notifications/get-all-notifications");
+export const GetAllNotifications = async () => apiRequest("get", "https://project-management-d5e2.onrender.com/api/notifications/get-all-notifications");
 
-export const MarkNotificationAsRead = async (id) => apiRequest("post", "/api/notifications/mark-as-read");
+export const MarkNotificationAsRead = async (id) => apiRequest("post", "https://project-management-d5e2.onrender.com/api/notifications/mark-as-read");
 
-export const DeleteAllNotifications = async () => apiRequest("delete", "/api/notifications/delete-all-notifications");
+export const DeleteAllNotifications = async () => apiRequest("delete", "https://project-management-d5e2.onrender.com/api/notifications/delete-all-notifications");
