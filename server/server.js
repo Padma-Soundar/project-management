@@ -1,3 +1,4 @@
+const cors = require("cors");
 const express = require("express");
 const app = express();
 require("dotenv").config();
@@ -9,7 +10,6 @@ const usersRoute = require("./routes/usersRoute");
 const projectsRoute = require("./routes/projectsRoute");
 const tasksRoute = require("./routes/tasksRoute");
 const notificationsRoute = require("./routes/notificationsRoute");
-
 
 const origin = 'https://project-management-d5e2.onrender.com/'
 
