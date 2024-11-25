@@ -10,6 +10,13 @@ const projectsRoute = require("./routes/projectsRoute");
 const tasksRoute = require("./routes/tasksRoute");
 const notificationsRoute = require("./routes/notificationsRoute");
 
+
+const origin = 'https://project-management-d5e2.onrender.com/'
+
+app.use(cors({
+    origin
+}));
+
 app.use("/api/users", usersRoute);
 app.use("/api/projects", projectsRoute);
 app.use("/api/tasks", tasksRoute);
